@@ -57,13 +57,38 @@
 
 // export default App
 
-import './App.css'
-import Home from './pages/Home.jsx';
+// import './App.css'
+// import Home from './pages/Home.jsx';
 
+// function App() {
+//   return (
+//     <>
+//     <Home />
+
+//     </>
+//   )
+// }
+
+// export default App
+
+import "./css/App.css";
+import Home from './pages/Home.jsx';
+import Favourite from './pages/Favourites.jsx';
+import {Routes, Route} from 'react-router-dom';
+import NavBar from './components/NavBar.jsx';
 function App() {
   return (
     <>
-    <Home />
+    <div>
+      <NavBar/>
+      <main className='main-content'>
+     <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/favourites' element={<Favourite />} />
+     </Routes>
+      </main>
+    </div>
+
 
     </>
   )
