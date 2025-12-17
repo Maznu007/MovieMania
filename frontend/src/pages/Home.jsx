@@ -112,16 +112,16 @@ function Home() {
 
   return (
     <div className="home">
-      {/* 🎬 Hero */}
+      {/*Hero */}
       <HeroCarousel />
 
-      {/* 🎭 Genre Buttons */}
+      {/*Genre Buttons*/}
       <GenreFilter
         onGenreSelect={handleGenreSelect}
         activeGenre={activeGenre}
       />
 
-      {/* 🔍 Search */}
+      {/*Search */}
       <form onSubmit={handleSearch} className="search-form">
         <input
           type="text"
@@ -135,7 +135,7 @@ function Home() {
         </button>
       </form>
 
-      {/* 🔥 Top / Trending BELOW search */}
+      {/*Top / Trend */}
       <div className="extra-filters centered">
         <button
           className={`genre-chip ${activeSource === "top" ? "active" : ""}`}

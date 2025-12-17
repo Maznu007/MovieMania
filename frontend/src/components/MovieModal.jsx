@@ -1,4 +1,3 @@
-// → src/components/MovieModal.jsx
 import React, { useEffect, useState } from "react";
 import { getMovieDetails } from "../services/api";
 import "../css/MovieModal.css";
@@ -20,7 +19,7 @@ function MovieModal({ movieId, onClose }) {
 
   if (!details) return null;
 
-  // Find official trailer
+  //official trailer
   const trailer = details.videos.results.find(
     (vid) => vid.type === "Trailer" && vid.site === "YouTube"
   );

@@ -1,10 +1,7 @@
-// src/components/HeroCarousel.jsx
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { getTrendingMovies } from "../services/api";
 import "../css/HeroCarousel.css";
-
-// Slick styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -15,7 +12,7 @@ function HeroCarousel() {
     const fetchTrending = async () => {
       try {
         const data = await getTrendingMovies();
-        setMovies(data.slice(0, 5)); // show top 5
+        setMovies(data.slice(0, 5)); //top 5
       } catch (err) {
         console.error(err);
       }

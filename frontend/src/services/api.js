@@ -35,7 +35,7 @@ export async function getMoviesByGenre(genreId) {
   return data.results;
 }
 
-// →fetch modal details
+//fetch modal details
 
 export async function getMovieDetails(movieId) {
   const response = await fetch(

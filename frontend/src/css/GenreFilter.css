@@ -4,11 +4,11 @@
   gap: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none; 
 }
 
 .genre-filter::-webkit-scrollbar {
-  display: none; /* Chrome */
+  display: none; 
 }
 
 .genre-chip {

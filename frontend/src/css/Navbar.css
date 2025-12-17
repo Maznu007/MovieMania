@@ -16,7 +16,7 @@
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: bold;
-  font-family: 'Bebas Neue', cursive; /* You can load from Google Fonts */
+  font-family: 'Bebas Neue', cursive; 
   letter-spacing: 2px;
   color: #fff;
   display: flex;
