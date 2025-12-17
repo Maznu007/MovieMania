@@ -34,3 +34,26 @@ export async function getMoviesByGenre(genreId) {
   const data = await response.json();
   return data.results;
 }
+
+// →fetch modal details
+
+export async function getMovieDetails(movieId) {
+  const response = await fetch(
+    `${BASE_URL}/movie/${movieId}?api_key=${API_KEY}&append_to_response=videos,credits`
+  );
+  const data = await response.json();
+  return data;
+}
+
+// top trend
+export async function getTrendingMoviesDaily() {
+  const response = await fetch(`${BASE_URL}/trending/movie/day?api_key=${API_KEY}`);
+  const data = await response.json();
+  return data.results;
+}
+
+export async function getTopRatedMovies() {
+  const response = await fetch(`${BASE_URL}/movie/top_rated?api_key=${API_KEY}`);
+  const data = await response.json();
+  return data.results;
+}

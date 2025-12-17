@@ -1,0 +1,93 @@
+/* MovieModal.css */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: #111;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  overflow: hidden;
+  color: white;
+  position: relative;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.modal-header {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.modal-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    transparent
+  );
+}
+
+.modal-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-overview {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.modal-info {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.trailer-btn {
+  display: inline-block;
+  background: #e50914;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.trailer-btn:hover {
+  background: #f40612;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  background: #222;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+}
