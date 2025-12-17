@@ -12,3 +12,25 @@ export async function searchMovies(query){
     const data = await response.json();
     return data.results;        
 }
+// fetch trending movies
+export async function getTrendingMovies() {
+  const response = await fetch(`${BASE_URL}/trending/movie/day?api_key=${API_KEY}`);
+  const data = await response.json();
+  return data.results;
+}
+
+//Get genre list
+export async function getGenres() {
+  const response = await fetch(`${BASE_URL}/genre/movie/list?api_key=${API_KEY}`);
+  const data = await response.json();
+  return data.genres;
+}
+
+//Get movies by genre ID
+export async function getMoviesByGenre(genreId) {
+  const response = await fetch(
+    `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=${genreId}`
+  );
+  const data = await response.json();
+  return data.results;
+}
