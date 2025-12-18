@@ -1,4 +1,4 @@
-# 🎬 Movie Explorer
+# 🎬 Movie Mania
 
 A sleek, responsive React web app to browse, search, and favorite movies using the [TMDB API](https://www.themoviedb.org/).  
 Crafted with ❤️ using modern React, beautiful UI, and clean code structure.
